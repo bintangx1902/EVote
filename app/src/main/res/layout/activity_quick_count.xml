@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Hiasan gelombang warna merah di bagian header -->
+
+    <!-- Logo kanan -->
+
+    <ImageView
+        android:id="@+id/headerWaveDecoration"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:color="#FF0000"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/leftLogo"
+        android:layout_width="114dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="-4dp"
+        android:src="@drawable/logokpu" />
+
+    <ImageView
+        android:id="@+id/rightLogo"
+        android:layout_width="92dp"
+        android:layout_height="116dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/kotak" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerWaveDecoration"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:padding="16dp">
+
+                <!-- CardView untuk Paslon 1 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="550dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/paslon1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="Paslon 1"/>
+
+                        <TextView
+                            android:id="@+id/hasil1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="JumLah suara : "
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- CardView untuk Paslon 2 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="550dp"
+                            android:layout_height="120dp"
+                            android:contentDescription=""
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/paslon2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="Paslon 2"/>
+
+                        <TextView
+                            android:id="@+id/hasil2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="JumLah suara : "
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- CardView untuk Paslon 3 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="550dp"
+                            android:layout_height="120dp"
+                            android:contentDescription=""
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/paslon3"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="Paslon 3"/>
+
+                        <TextView
+                            android:id="@+id/hasil3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="JumLah suara : "
+                            android:textSize="18sp"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
