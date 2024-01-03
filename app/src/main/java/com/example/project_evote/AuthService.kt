@@ -29,7 +29,8 @@ interface AuthService {
 
     @FormUrlEncoded
     @POST("/api/logout")
-    fun postLogout(@Header("Authorization") token: String): Call<VoteCallback>
+    fun postLogout(@Header("Authorization") token: String,
+                    @Field("key") key: String): Call<VoteCallback>
 
     @FormUrlEncoded
     @POST("/api/register")
