@@ -41,4 +41,10 @@ class DBHelper(context: Context) : SQLiteOpenHelper(context, "tokens", null, 1) 
 
         return token
     }
+
+    fun deleteAllToken() {
+        val db = this.writableDatabase
+        db.delete("tokens", null, null)
+        db.close()
+    }
 }
